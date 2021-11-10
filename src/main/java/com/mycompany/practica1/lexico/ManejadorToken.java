@@ -1,6 +1,7 @@
 
 package com.mycompany.practica1.lexico;
 
+import com.mycompany.practica1.semantico.Pila;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
@@ -51,9 +52,12 @@ public class ManejadorToken {
     }
     
     public void Reiniciar(){
+        System.out.println("Reiniciando siuuu");
         Token = new ArrayList<Token>();
         Errores =  new ArrayList<Error>();
         ConteoT = new ArrayList<Token>();
+        Pila.Posicion = 0;
+        Pila.P = null;
     }
     
     public void Escribir(ArrayList n ){

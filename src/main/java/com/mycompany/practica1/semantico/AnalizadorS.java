@@ -85,7 +85,7 @@ public class AnalizadorS{
         Token Antes = TokenActual;
         boolean Continuar = true;
         
-        while(p.Continuar() | Continuar){
+        while(p.Continuar()){
             int Tipo = -1;
             if(Pila.Posicion < ManejadorToken.Token.size()){
             Tipo = getTipo(TokenActual);
@@ -153,6 +153,8 @@ public class AnalizadorS{
         Interpretar(); }
         
     }
+    
+    
     
     public void Interpretar(){
         int x =0;
